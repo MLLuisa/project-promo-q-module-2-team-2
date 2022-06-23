@@ -1,0 +1,25 @@
+@mixin absoluteCentered() { /* nos pone el contenido en el centro del contenedor, su contenedor es el primero sin position static */
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* 
+.container {
+  position: relative;
+}
+
+.content {
+  @include absoluteCentered();
+} */
+
+@mixin t($fontSize, $lineHeight) { /* aplica font-size y line-height que definimos al usarlo */
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+/* .main__title {
+  @include t(32px, 40px);
+}
+.main__content p {
+  @include t(18px, 24px);
+} */
