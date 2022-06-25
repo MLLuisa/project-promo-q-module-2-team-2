@@ -1,0 +1,15 @@
+.mainLanding {
+  width: 100vw;
+  height: 80vh;
+  padding: 30% 11% 10%;
+  background-color: $white-four;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logoCards {
+    width: 250px;
+    height: 63px;
+  }
+}
