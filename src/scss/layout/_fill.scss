@@ -1,0 +1,40 @@
+.fill {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-principal;
+  /*Añadir al html general*/
+  &__title {
+    color: $gunmetal;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 281px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+  &__label {
+    width: 281px;
+    color: $dark-green-blue;
+    font-size: 14px;
+    line-height: 1.43;
+    padding-bottom: 7px;
+  }
+  &__input {
+    width: 281px;
+    height: 30px;
+    font-size: 14px;
+    border: solid 1px $hospital-green;
+    padding: 5px 9px 7px 9px;
+    margin-bottom: 20px;
+  }
+}
+.action {
+  width: 281px;
+}
+.fa-keyboard {
+  color: $dull-orange;
+  padding-right: 10px;
+}
