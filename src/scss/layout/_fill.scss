@@ -14,6 +14,9 @@
     width: 281px;
     padding-top: 20px;
     padding-bottom: 25px;
+    @media all and (min-width: 768px) {
+      width: 329px;
+    }
   }
   &__label {
     width: 281px;
@@ -21,6 +24,9 @@
     font-size: 14px;
     line-height: 1.43;
     padding-bottom: 7px;
+    @media all and (min-width: 768px) {
+      width: 329px;
+    }
   }
   &__input {
     width: 281px;
@@ -29,12 +35,71 @@
     border: solid 1px $hospital-green;
     padding: 5px 9px 7px 9px;
     margin-bottom: 20px;
+    @media all and (min-width: 768px) {
+      width: 329px;
+    }
+  }
+  &__image {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding-bottom: 20px;
+    margin-left: -90px;
+    @media all and (min-width: 768px) {
+      width: 329px;
+      margin-left: 0px;
+    }
   }
 }
-.action {
-  width: 281px;
-}
+
 .fa-keyboard {
   color: $dull-orange;
   padding-right: 10px;
+}
+.action {
+  text-align: center;
+  /*margin: 30px;  Añadido nuevo*/
+}
+.action__upload-btn {
+  background: $dull-orange;
+  border-radius: 3px;
+  border: 0;
+  box-shadow: 0 0 5px rgba(#000, 0.3);
+  color: #fff;
+  font-family: $font-family-principal;
+  font-size: 14px;
+  padding: 4px 22px 7px 22px;
+  width: 250px;
+  cursor: pointer;
+}
+.action__hiddenField {
+  /* Ocultamos el input de tipo "file" porque no podemos 
+    darle los estilos que queremos */
+  display: none;
+}
+
+.profile {
+  /*margin: 0 auto;*/
+  display: flex;
+  justify-content: center;
+}
+.profile__image,
+.profile__preview {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid $hospital-green;
+}
+.profile__image {
+  width: 300px;
+  height: 300px;
+  /*Añadido para que no se vea de momento*/
+  display: none;
+}
+
+.profile__preview {
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  margin-top: 5px;
 }
