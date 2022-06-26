@@ -50,15 +50,21 @@
       margin-left: 0px;
     }
   }
+  &__profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -90px;
+    padding-bottom: 20px;
+    @media all and (min-width: 768px) {
+      margin-left: -140px;
+    }
+  }
 }
 
 .fa-keyboard {
   color: $dull-orange;
   padding-right: 10px;
-}
-.action {
-  text-align: center;
-  /*margin: 30px;  Añadido nuevo*/
 }
 .action__upload-btn {
   background: $dull-orange;
@@ -68,8 +74,9 @@
   color: #fff;
   font-family: $font-family-principal;
   font-size: 14px;
-  padding: 4px 22px 7px 22px;
-  width: 250px;
+  padding: 6px 22px 7px 22px;
+  width: 140px;
+  height: 30px;
   cursor: pointer;
 }
 .action__hiddenField {
@@ -78,11 +85,6 @@
   display: none;
 }
 
-.profile {
-  /*margin: 0 auto;*/
-  display: flex;
-  justify-content: center;
-}
 .profile__image,
 .profile__preview {
   background-position: center;
@@ -101,5 +103,4 @@
   width: 30px;
   height: 30px;
   margin-left: 20px;
-  margin-top: 5px;
 }
