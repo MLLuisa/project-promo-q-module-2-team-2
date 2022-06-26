@@ -1,1 +1,22 @@
+.footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $white-two;
+    border-top: solid 1px $white-two;
+}
+
+.footerCopy {
+    color: $brownish-grey;
+    padding-top: 18px;
+    padding-bottom: 12px;
+    opacity: 0.5;
+}
+
+.footerImage {
+    width: 103px;
+    height: 40px;
+    margin: 12px 47px 20px 48px;
+}
 
