@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   margin-top: 10px;
-  border-top: #d8d8d8 solid 1px;
+  border-top: $white-two solid 1px;
   &__title {
     text-align: left;
     color: $gunmetal;
@@ -62,8 +62,8 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-bottom: #d8d8d8 solid 1px;
-  border-top: #d8d8d8 solid 1px;
+  border-bottom: $white-two solid 1px;
+  border-top: $white-two solid 1px;
   &__text {
     color: $gunmetal;
     font-size: 18px;
@@ -85,11 +85,11 @@
     margin-bottom: 30px;
     &--icon {
       font-size: 18px;
-      color: white;
+      color: $white-three;
     }
     &--link {
       text-decoration: none;
-      color: white;
+      color: $white-three;
       font-size: 14px;
       padding: 20px 9px 20px 9px;
     }
