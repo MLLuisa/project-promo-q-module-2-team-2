@@ -1,45 +1,83 @@
+.desing {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: $font-family-principal;
+
+  &__title {
+    color: $gunmetal;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    width: 281px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+    &--icon {
+      color: $dull-orange;
+      font-size: 18px;
+      padding-right: 12px;
+    }
+  }
+  &__div {
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &--title3 {
+      padding-left: 19px;
+      color: $gunmetal;
+      font-size: 14px;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .color1 {
-    background-color: $dark-green-blue;
+  background-color: $dark-green-blue;
 }
 
 .color2 {
-    background-color: $-dirty-blue;
+  background-color: $-dirty-blue;
 }
 
 .color3 {
-    background-color: $hospital-green;
+  background-color: $hospital-green;
 }
 
 .color4 {
-    background-color: $dried-blood;
+  background-color: $dried-blood;
 }
 
 .color5 {
-    background-color: $rusty-red;
+  background-color: $rusty-red;
 }
 
 .color6 {
-    background-color: $tomato;
+  background-color: $tomato;
 }
 
 .color7 {
-    background-color: $slate;
+  background-color: $slate;
 }
 
 .color8 {
-    background-color: $faded-orange;
+  background-color: $faded-orange;
 }
 
 .color9 {
-    background-color: $light-grey-blue;
+  background-color: $light-grey-blue;
 }
 
 .sqColor {
-    width: 30px;
-    height: 25px;
+  width: 30px;
+  height: 25px;
 }
 
-.familyColor1, .familyColor2, .familyColor3 {
-    display: flex;
+.familyColor1,
+.familyColor2,
+.familyColor3 {
+  display: flex;
+  margin-bottom: 20px;
 }
-
