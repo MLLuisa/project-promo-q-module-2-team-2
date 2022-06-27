@@ -13,8 +13,10 @@
     font-size: 18px;
     width: 281px;
     padding-top: 10px;
-
     text-transform: uppercase;
+    @media all and (min-width: 768px) {
+      width: 329px;
+    }
     &--icon {
       color: $dull-orange;
       font-size: 18px;
