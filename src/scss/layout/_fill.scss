@@ -13,19 +13,14 @@
     width: 281px;
     padding-top: 20px;
     padding-bottom: 25px;
-    @media all and (min-width: 768px) {
-      width: 329px;
-    }
   }
+
   &__label {
     width: 281px;
     color: $dark-green-blue;
     font-size: 14px;
     line-height: 1.43;
     padding-bottom: 7px;
-    @media all and (min-width: 768px) {
-      width: 329px;
-    }
   }
   &__input {
     width: 281px;
@@ -34,9 +29,6 @@
     border: solid 1px $hospital-green;
     padding: 5px 9px 7px 9px;
     margin-bottom: 20px;
-    @media all and (min-width: 768px) {
-      width: 329px;
-    }
   }
   &__image {
     display: flex;
@@ -44,10 +36,6 @@
     align-items: center;
     padding-bottom: 20px;
     margin-left: -90px;
-    @media all and (min-width: 768px) {
-      width: 329px;
-      margin-left: 0px;
-    }
   }
   &__profile {
     display: flex;
@@ -55,9 +43,6 @@
     align-items: center;
     margin-left: -90px;
     padding-bottom: 20px;
-    @media all and (min-width: 768px) {
-      margin-left: -140px;
-    }
   }
 }
 
@@ -70,7 +55,7 @@
   border-radius: 3px;
   border: 0;
   box-shadow: 0 0 5px rgba(#000, 0.3);
-  color: #fff;
+  color: $white-three;
   font-family: $font-family-principal;
   font-size: 14px;
   padding: 6px 22px 7px 22px;

@@ -1,6 +1,5 @@
 .share {
   font-family: $font-family-principal;
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,9 +13,7 @@
     width: 281px;
     padding-top: 10px;
     text-transform: uppercase;
-    @media all and (min-width: 768px) {
-      width: 329px;
-    }
+
     &--icon {
       color: $dull-orange;
       font-size: 18px;
@@ -56,7 +53,7 @@
 }
 .card {
   font-family: $font-family-principal;
-  width: 100%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
