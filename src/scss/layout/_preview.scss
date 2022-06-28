@@ -1,11 +1,11 @@
-.preview{
+.preview {
     background: linear-gradient($silver, $pale-grey);
     display: flex;
     flex-direction: column;
     //align-items: center;
     justify-content: center;
 
-    &__box{
+    &__box {
         width: 240px;
         background-color: $white-two;
         margin-bottom: 40px;
@@ -15,7 +15,7 @@
         box-shadow: 0 1px 10px 0 $black-20, 0 1px 3px 0 rgba(0, 0, 0, 0.35);
     }
 
-    &__name{
+    &__name {
         width: 200px;
         height: 20px;
         color: $dark-green-blue;
@@ -26,26 +26,27 @@
         margin-left: 20px;
     }
 
-    &__job{
+    &__job {
         width: 170px;
         height: 20px;
         color: $gunmetal;
         margin-left: 20px;
     }
-    &__photo{
+
+    &__photo {
         width: 240px;
         height: 200px;
         margin-top: 10px;
     }
 
-    &__socialIcons{
+    &__socialIcons {
         display: flex;
         margin-top: 10px;
         margin-bottom: 12px;
         margin-left: 20px;
     }
 
-    &__icon{
+    &__icon {
         width: 32px;
         height: 32px;
         border-radius: 50%;
@@ -58,15 +59,15 @@
         margin-right: 10px;
     }
 
-    &__rectangle{
+    &__rectangle {
         width: 5px;
         height: 42px;
-        background-color: $-dirty-blue;
+        background-color: $dirty-blue;
         position: absolute;
         top: 20px;
     }
 
-    &__reset{
+    &__reset {
         width: 75px;
         height: 30px;
         font-size: 12px;
@@ -81,7 +82,7 @@
 
 }
 
-.fa-trash-can{
+.fa-trash-can {
     color: $gunmetal;
     font-size: 12px;
     //margin: 5px 10px;

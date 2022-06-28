@@ -23,11 +23,13 @@
       padding-right: 12px;
     }
   }
+
   &__div {
     width: 280px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+
     &--title3 {
       padding-left: 19px;
       color: $gunmetal;
@@ -42,7 +44,7 @@
 }
 
 .color2 {
-  background-color: $-dirty-blue;
+  background-color: $dirty-blue;
 }
 
 .color3 {
