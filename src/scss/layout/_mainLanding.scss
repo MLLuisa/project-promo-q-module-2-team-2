@@ -1,7 +1,7 @@
 .mainLanding {
   width: 100vw;
   height: 80vh;
-  padding: 20vh 10vw 6vh;
+  padding: 22vh 10vw 6vh;
   background-color: $white-four;
   display: flex;
   flex-direction: column;
@@ -21,18 +21,31 @@
     height: 63px;
     background: url(../images/logo-awesome-profile-cards.svg) center no-repeat;
     background-size: contain;
+
+    @media all and (min-width: 768px) {
+      width: 419px;
+      height: 105px;
+    }
   }
 
   &__title {
     font-family: $font-family-landing;
     color: $dull-orange;
     font-size: 19.2px;
+
+    @media all and (min-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &__description {
     font-family: $font-family-principal;
     color: $dark-green-blue;
     font-size: 12.8px;
+
+    @media all and (min-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &__iconsGroup {
@@ -43,7 +56,12 @@
     justify-content: space-around;
     align-items: center;
 
-    .fa {
+    @media all and (min-width: 768px) {
+      width: 325px;
+      height: 86px;
+    }
+
+    .iconStyle {
       color: $dull-orange;
 
     }
