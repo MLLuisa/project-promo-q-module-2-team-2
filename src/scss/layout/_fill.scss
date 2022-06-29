@@ -1,8 +1,4 @@
 .fill {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: $font-family-principal;
   /*Añadir al html general*/
   &__title {
@@ -16,6 +12,10 @@
   }
 }
 .fillInput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   &__label {
     width: 281px;
     color: $dark-green-blue;
