@@ -1,7 +1,7 @@
 'use strict';
 
 // Diseña
-const designTitle = document.querySelector('.js_design');
+const designTitle = document.querySelector('.js_designTitle');
 const divDesign = document.querySelector('.js_divDesign');
 const iconDesign = document.querySelector('.js_iconDesign');
 

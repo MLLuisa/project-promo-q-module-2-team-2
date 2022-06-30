@@ -1,21 +1,17 @@
 .fill {
-  font-family: $font-family-principal;
-  /*Añadir al html general*/
-  &__title {
-    color: $gunmetal;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: left;
-    width: 281px;
-    padding-top: 20px;
-    padding-bottom: 25px;
-  }
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
+
 .fillInput {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
   &__label {
     width: 281px;
     color: $dark-green-blue;
@@ -23,6 +19,7 @@
     line-height: 1.43;
     padding-bottom: 7px;
   }
+
   &__input {
     width: 281px;
     height: 30px;
@@ -31,6 +28,7 @@
     padding: 5px 9px 7px 9px;
     margin-bottom: 20px;
   }
+
   &__image {
     display: flex;
     justify-content: left;
@@ -38,6 +36,7 @@
     padding-bottom: 20px;
     margin-left: -90px;
   }
+
   &__profile {
     display: flex;
     justify-content: center;
@@ -47,10 +46,6 @@
   }
 }
 
-.fa-keyboard {
-  color: $dull-orange;
-  padding-right: 10px;
-}
 .action__upload-btn {
   background: $dull-orange;
   border-radius: 3px;
@@ -64,6 +59,7 @@
   height: 30px;
   cursor: pointer;
 }
+
 .action__hiddenField {
   /* Ocultamos el input de tipo "file" porque no podemos 
     darle los estilos que queremos */
@@ -77,6 +73,7 @@
   background-size: cover;
   border: 1px solid $hospital-green;
 }
+
 .profile__image {
   width: 300px;
   height: 300px;

@@ -10,10 +10,35 @@
     gap: 10px;
   }
 }
+
 .form {
   padding: 0 20px;
+  font-family: $font-family-principal;
 
   @media all and (min-width: 768px) {
     width: 329px;
+  }
+}
+
+.headSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+
+  &__title {
+    color: $gunmetal;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: left;
+    padding-top: 20px;
+    padding-bottom: 25px;
+
+  }
+
+  .fa {
+    color: $dull-orange;
+    padding-right: 10px;
   }
 }
