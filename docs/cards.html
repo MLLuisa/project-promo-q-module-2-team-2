@@ -32,8 +32,10 @@
         <div class="preview__box">
             <h3 class="preview__name js_previewName">Nombre apellido</h3>
             <p class="preview__job js_previewJob">Front-end developer</p>
-            <img class="preview__photo" src="./assets/images/img-preview.jpg"
-                alt="profile preview">
+            <div class="preview__photo js__profile-image"></div>
+
+            <!--  <img class="preview__photo js__profile-image"
+                src="./assets/images/img-preview.jpg" alt="profile preview"> -->
             <nav>
                 <ul class="preview__socialIcons">
                     <li>
@@ -67,7 +69,7 @@
             <div class="preview__rectangle"></div>
         </div>
     </section>
-    <form class="form">
+    <form class="form js_allInputs">
       <fieldset class="desing">
         <!-- Plantilla  -->
         <section class="headSection js_designTitle">
@@ -111,7 +113,7 @@
         <div class=" fillInput js_divFill collapsed">
           <label class="fillInput__label" for="fullName">Nombre completo</label>
           <input class="fillInput__input js_inputName" type="text" id="fullName"
-            name="fullName" placeholder="Ej : Anakin Skywalker" required />
+            name="name" placeholder="Ej : Anakin Skywalker" required />
 
           <label class="fillInput__label" for="job">Puesto</label>
           <input class="fillInput__input js_inputJob" type="text" id="job" name="job"
@@ -120,22 +122,19 @@
           <p class="fillInput__label">Imagen de perfil</p>
           <div class="fillInput__profile">
             <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
-            <input type="file" name="" id="img-selector"
+            <input type="file" name="photo" id="img-selector"
               class="action__hiddenField js__profile-upload-btn" />
 
-            <div class="profile__image js__profile-image" style="
-              background-image: url(https://via.placeholder.com/300x300/cccccc/666666/?text=IMAGE);
-            "></div>
             <div class="profile__preview js__profile-preview"></div>
           </div>
 
           <label class="fillInput__label" for="Email">Email</label>
           <input class="fillInput__input js_inputEmail" type="mail" id="Email"
-            name="Email" placeholder="Ej : skyguy@gmail.com" required />
+            name="email" placeholder="Ej : skyguy@gmail.com" required />
 
           <label class="fillInput__label" for="tel">Teléfono</label>
-          <input class="fillInput__input js_inputPhone" type="tel" id="tel" name="tel"
-            placeholder="Ej : 555-55-55-55" required maxlength="9" />
+          <input class="fillInput__input js_inputPhone" type="tel" id="tel"
+            name="phone" placeholder="Ej : 555-55-55-55" required maxlength="9" />
 
           <label class="fillInput__label" for="linkedin">Linkedin</label>
           <input class="fillInput__input js_inputLinkedin" type="url" id="linkedin"
@@ -162,7 +161,7 @@
 
           <div class="card  js_cardShare collapsed">
             <p class="card__text">La tarjeta ha sido creada:</p>
-            <p class="card__link">link de prueba</p>
+            <p class="card__link">Link Jedi para compartir</p>
 
             <div class="card__twitter">
               <i class="fa-brands fa-twitter card__twitter--icon"></i>

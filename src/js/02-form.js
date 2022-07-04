@@ -10,11 +10,12 @@ const previewName = document.querySelector ('.js_previewName');
 const previewJob = document.querySelector ('.js_previewJob');
 const previewPhone = document.querySelector ('.js_previewPhone');
 const previewEmail = document.querySelector ('.js_previewEmail');
-const previewLinkedine = document.querySelector ('.js_previewLinkedin');
+const previewLinkedin = document.querySelector ('.js_previewLinkedin');
 const previewGithub = document.querySelector ('.js_previewGithub');
 const fileField = document.querySelector('.js__profile-upload-btn');
 const profileImage = document.querySelector('.js__profile-image');
 const profilePreview = document.querySelector('.js__profile-preview');
+const allInputs = document.querySelector('.js_allInputs');
 
 const dataInput = {
   palette: 1,
@@ -26,13 +27,30 @@ const dataInput = {
   github: '',
   photo: ''
 };
-const handleInput = () =>{
+const previewData ={
+  name: previewName,
+  job: previewJob,
+  phone: previewPhone,
+  email: previewEmail,
+  linkedin: previewLinkedin,
+  github: previewGithub,
+};
+/* const handleInput = () =>{
   const valueInput = inputName.value;
   dataInput.name = valueInput;
   previewName.innerHTML = dataInput.name;
 };
 inputName.addEventListener('keyup', handleInput);
+ */
+const handleInput = (ev) =>{
+  const nameInput = ev.target.name;
+  const valueInput = ev.target.value;
+  dataInput[nameInput] =valueInput;
+console.log(dataInput);
+previewData[nameInput].innerHTML = valueInput;
+};
 
+allInputs.addEventListener('keyup', handleInput);
 
 //Capturar imagen y visualizar
 const fr = new FileReader();
