@@ -3,7 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
   border-top: $white-two solid 1px;
 
   &__button {
@@ -19,10 +18,8 @@
     border: none;
     border-radius: 12px;
     box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.32);
-
     font-size: 18px;
-    color: $white-two;
-
+    color: $white-three;
     text-transform: uppercase;
 
     &:hover {
@@ -30,7 +27,7 @@
     }
 
     &--icon {
-      color: $white-two;
+      color: $white-three;
       font-size: 22px;
       height: 22px;
       padding-right: 14px;
@@ -40,7 +37,6 @@
 
 .card {
   font-family: $font-family-principal;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -80,7 +76,7 @@
       text-decoration: none;
       color: $white-three;
       font-size: 14px;
-      padding: 20px 9px 20px 9px;
+      padding: 10px;
     }
   }
 }

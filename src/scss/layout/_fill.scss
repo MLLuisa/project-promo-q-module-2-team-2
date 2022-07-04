@@ -12,12 +12,17 @@
   justify-content: center;
   align-items: center;
 
+
   &__label {
     width: 281px;
     color: $dark-green-blue;
     font-size: 14px;
     line-height: 1.43;
     padding-bottom: 7px;
+
+    @media all and (min-width: 768px) {
+      width: 329px;
+    }
   }
 
   &__input {
@@ -27,14 +32,10 @@
     border: solid 1px $hospital-green;
     padding: 5px 9px 7px 9px;
     margin-bottom: 20px;
-  }
 
-  &__image {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    padding-bottom: 20px;
-    margin-left: -90px;
+    @media all and (min-width: 768px) {
+      width: 329px;
+    }
   }
 
   &__profile {
@@ -66,19 +67,12 @@
   display: none;
 }
 
-.profile__image,
+
 .profile__preview {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
   border: 1px solid $hospital-green;
-}
-
-.profile__image {
-  width: 300px;
-  height: 300px;
-  /*Añadido para que no se vea de momento*/
-  display: none;
 }
 
 .profile__preview {

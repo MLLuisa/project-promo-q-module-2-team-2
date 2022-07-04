@@ -6,11 +6,12 @@
   justify-content: center;
   height: 457px;
   width: 100%;
+  margin-top: 20px;
 
-  @media all and (min-width: 768px){
+  @media all and (min-width: 768px) {
     border-radius: 6px;
     height: 812px;
-}
+  }
 
   &__box {
     width: 240px;
@@ -44,6 +45,8 @@
     width: 240px;
     height: 200px;
     margin-top: 10px;
+    background: url(../images/img-preview.jpg) center no-repeat;
+    background-size: contain;
   }
 
   &__socialIcons {

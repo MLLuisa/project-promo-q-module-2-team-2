@@ -53,7 +53,7 @@
     height: 73.8px;
     border: solid 1.6px $dull-orange;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
 
     @media all and (min-width: 768px) {
@@ -84,7 +84,7 @@
   &__Link {
     text-decoration: none;
     text-transform: uppercase;
-    color: $white-two;
+    color: $white-three;
     font-family: $font-family-principal;
     font-weight: 600;
     display: inline-block;

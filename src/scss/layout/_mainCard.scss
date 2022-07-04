@@ -6,16 +6,18 @@
     background-image: linear-gradient($white-four, $white-three);
     height: 100%;
     padding: 0 40px;
-    gap: 10px;
+    gap: 30px;
   }
 }
 
 .form {
-  padding: 0 20px;
   font-family: $font-family-principal;
+  padding: 0 20px;
 
   @media all and (min-width: 768px) {
     width: 329px;
+    padding: 0 0;
+    ;
   }
 }
 
@@ -24,14 +26,18 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 280px;
+  width: 281px;
+
+  @media all and (min-width: 768px) {
+    width: 329px;
+  }
 
   &__title {
     color: $gunmetal;
     font-size: 18px;
     text-transform: uppercase;
     text-align: left;
-    padding-top: 20px;
+    padding-top: 25px;
     padding-bottom: 25px;
   }
 
