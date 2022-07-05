@@ -1,11 +1,5 @@
 'use strict';
 
-const inputName = document.querySelector ('.js_inputName');
-const inputJob = document.querySelector ('.js_inputJob');
-const inputEmail = document.querySelector ('.js_inputEmail');
-const inputPhone = document.querySelector ('.js_inputPhone');
-const inputLinkedin = document.querySelector ('.js_inputLinkedin');
-const inputGithub = document.querySelector ('.js_inputGithub');
 const previewName = document.querySelector ('.js_previewName');
 const previewJob = document.querySelector ('.js_previewJob');
 const previewPhone = document.querySelector ('.js_previewPhone');
@@ -27,14 +21,17 @@ const dataInput = {
   github: '',
   photo: ''
 };
-const previewData ={
-  name: previewName,
-  job: previewJob,
-  phone: previewPhone,
-  email: previewEmail,
-  linkedin: previewLinkedin,
-  github: previewGithub,
-};
+
+function innerPreview() {
+  previewName.innerHTML = dataInput.name;
+  previewJob.innerHTML = dataInput.job;
+  previewPhone.href = dataInput.phone;
+  previewEmail.href = dataInput.email;
+  previewLinkedin.href = dataInput.linkedin;
+  previewGithub.href = dataInput.github;
+  profileImage.url = dataInput.photo;
+}
+
 /* const handleInput = () =>{
   const valueInput = inputName.value;
   dataInput.name = valueInput;
@@ -45,9 +42,9 @@ inputName.addEventListener('keyup', handleInput);
 const handleInput = (ev) =>{
   const nameInput = ev.target.name;
   const valueInput = ev.target.value;
-  dataInput[nameInput] =valueInput;
-console.log(dataInput);
-previewData[nameInput].innerHTML = valueInput;
+  dataInput[nameInput] = valueInput;
+  innerPreview();
+  console.log(dataInput);
 };
 
 allInputs.addEventListener('keyup', handleInput);

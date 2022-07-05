@@ -59,6 +59,9 @@
   width: 140px;
   height: 30px;
   cursor: pointer;
+  @media all and (min-width: 768px) {
+    margin-right: 48px;
+  }
 }
 
 .action__hiddenField {
