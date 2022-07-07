@@ -55,13 +55,6 @@ function innerPreview() {
   }
 }
 
-/* const handleInput = () =>{
-  const valueInput = inputName.value;
-  dataInput.name = valueInput;
-  previewName.innerHTML = dataInput.name;
-};
-inputName.addEventListener('keyup', handleInput);
- */
 const handleInput = (ev) =>{
   const nameInput = ev.target.name;
   const valueInput = ev.target.value;
@@ -100,7 +93,7 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
-  dataInput.photo = `url(${fr.result})`;
+  dataInput.photo = `url(${fr.result})`; //Guarda url en dataInput
 }
 
 
