@@ -53,11 +53,6 @@ function innerPreview() {
   } else{
     previewGithub.href = dataInput.github;
   }
-  if (dataInput.photo ===''){
-    profileImage.url  =``;
-  } else{
-    profileImage.url = dataInput.photo;
-  }
 }
 
 /* const handleInput = () =>{
@@ -105,6 +100,7 @@ function writeImage() {
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
+  dataInput.photo = `url(${fr.result})`;
 }
 
 
