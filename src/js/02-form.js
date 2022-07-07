@@ -23,13 +23,41 @@ const dataInput = {
 };
 
 function innerPreview() {
-  previewName.innerHTML = dataInput.name;
-  previewJob.innerHTML = dataInput.job;
-  previewPhone.href = dataInput.phone;
-  previewEmail.href = dataInput.email;
-  previewLinkedin.href = dataInput.linkedin;
-  previewGithub.href = dataInput.github;
-  profileImage.url = dataInput.photo;
+  if (dataInput.name ===''){
+    previewName.innerHTML =`Nombre apellido`;
+  } else{
+    previewName.innerHTML = dataInput.name;
+  }
+  if (dataInput.job===''){
+    previewJob.innerHTML =`Front-end developer`;
+  } else{
+    previewJob.innerHTML = dataInput.job;
+  }
+  if (dataInput.phone ===''){
+    previewPhone.href =``;
+  } else{
+    previewPhone.href = dataInput.phone;
+  }
+  if (dataInput.email ===''){
+    previewEmail.href =``;
+  } else{
+    previewEmail.href = `mailto: ${dataInput.email}`;
+  }
+  if (dataInput.linkedin ===''){
+    previewLinkedin.href =``;
+  } else{
+    previewLinkedin.href = dataInput.linkedin;
+  }
+  if (dataInput.github ===''){
+    previewGithub.href =``;
+  } else{
+    previewGithub.href = dataInput.github;
+  }
+  if (dataInput.photo ===''){
+    profileImage.url  =``;
+  } else{
+    profileImage.url = dataInput.photo;
+  }
 }
 
 /* const handleInput = () =>{
