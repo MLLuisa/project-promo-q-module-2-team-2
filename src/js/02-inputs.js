@@ -81,7 +81,7 @@ function writeImage() {
    * de nuestro componente.
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  profilePreview.style.backgroundImage = fr.result;
   dataInput.photo = `url(${fr.result})`; //Guarda url en dataInput
 }
 
