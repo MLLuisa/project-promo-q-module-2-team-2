@@ -25,11 +25,11 @@
   </header>
   <main class="mainCard">
     <section class="preview">
-      <a href="./cards.html" class="preview__reset">
-        <i class="fa-regular fa-trash-can"></i>
-        Reset
-      </a>
-      <div class="preview__box">
+      <button class="preview__reset js_btnReset">
+        <i class="fa-regular fa-trash-can"></i> Reset
+      </button>
+
+      <article class="preview__box js_previewBox palette-3">
         <h3 class="preview__name js_previewName">Nombre apellido</h3>
         <p class="preview__job js_previewJob">Front-end developer</p>
         <div class="preview__photo js__profile-image"></div>
@@ -37,32 +37,49 @@
         <nav>
           <ul class="preview__socialIcons">
             <li>
-              <a href="" target="_blank" class="preview__icon js_previewPhone">
-                <i class="fa-solid fa-mobile-screen-button"></i>
+              <a
+                href=""
+                target="_blank"
+                class="preview__icon js_previewPhone js_preview_icon"
+              >
+                <i class="fa-solid fa-mobile-screen-button js_icons"></i>
               </a>
             </li>
             <li>
-              <a href="" target="_blank" class="preview__icon js_previewEmail">
-                <i class="fa-regular fa-envelope"></i>
+              <a
+                href=""
+                target="_blank"
+                class="preview__icon js_previewEmail js_preview_icon"
+              >
+                <i class="fa-regular fa-envelope js_icons"></i>
               </a>
             </li>
 
             <li>
-              <a href="" target="_blank" class="preview__icon js_previewLinkedin">
-                <i class="fa-brands fa-linkedin-in"></i>
+              <a
+                href=""
+                target="_blank"
+                class="preview__icon js_previewLinkedin js_preview_icon"
+              >
+                <i class="fa-brands fa-linkedin-in js_icons"></i>
               </a>
             </li>
             <li>
-              <a href="" target="_blank" class="preview__icon js_previewGithub">
-                <i class="fa-brands fa-github-alt"></i>
+              <a
+                href=""
+                target="_blank"
+                class="preview__icon js_previewGithub js_preview_icon"
+              >
+                <i class="fa-brands fa-github-alt js_icons"></i>
               </a>
             </li>
           </ul>
         </nav>
-        <div class="preview__rectangle"></div>
-      </div>
+        <div class="preview__rectangle js_preview__rectangle"></div>
+      </article>
     </section>
-    <form class="form js_allInputs">
+
+    <form class="form">
       <fieldset class="desing">
         <!-- Plantilla  -->
         <section class="headSection js_designTitle">
@@ -75,19 +92,37 @@
           <h3 class="desing__div--title3">Colores</h3>
           <div class="desing__div--colors">
             <label class="familyColor1" for="familyColor1">
-              <input id="familyColor1" type="radio" value="1" name="color" />
+              <input
+                class="js_inputRadio"
+                id="familyColor1 "
+                type="radio"
+                value="1"
+                name="color"
+              />
               <div class="color1 sqColor"></div>
               <div class="color2 sqColor"></div>
               <div class="color3 sqColor"></div>
             </label>
             <label class="familyColor2" for="familyColor2">
-              <input id="familyColor2" type="radio" value="2" name="color" />
+              <input
+                class="js_inputRadio"
+                id="familyColor2"
+                type="radio"
+                value="2"
+                name="color"
+              />
               <div class="color4 sqColor"></div>
               <div class="color5 sqColor"></div>
               <div class="color6 sqColor"></div>
             </label>
             <label class="familyColor3" for="familyColor3">
-              <input id="familyColor3" type="radio" value="3" name="color" />
+              <input
+                class="js_inputRadio"
+                id="familyColor3"
+                type="radio"
+                value="3"
+                name="color"
+              />
               <div class="color7 sqColor"></div>
               <div class="color8 sqColor"></div>
               <div class="color9 sqColor"></div>
@@ -95,7 +130,8 @@
           </div>
         </div>
       </fieldset>
-      <fieldset class="fill">
+
+      <fieldset class="fill js_allInputs">
         <!-- Plantilla  -->
         <section class="headSection js_fillTitle">
           <h2 class=" headSection__title">
@@ -103,41 +139,83 @@
           </h2>
           <i class="fa-solid fa-angle-down js_iconFill"></i>
         </section>
-        <div class=" fillInput js_divFill collapsed">
+        <div class="fillInput js_divFill collapsed">
           <label class="fillInput__label" for="fullName">Nombre completo</label>
-          <input class="fillInput__input js_inputName" type="text" id="fullName"
-            name="name" placeholder="Ej : Anakin Skywalker" required />
+          <input
+            class="fillInput__input js_inputName"
+            type="text"
+            id="fullName"
+            name="name"
+            placeholder="Ej : Anakin Skywalker"
+            required
+          />
 
           <label class="fillInput__label" for="job">Puesto</label>
-          <input class="fillInput__input js_inputJob" type="text" id="job" name="job"
-            placeholder="Ej : Jedi Knight" required />
+          <input
+            class="fillInput__input js_inputJob"
+            type="text"
+            id="job"
+            name="job"
+            placeholder="Ej : Jedi Knight"
+            required
+          />
 
           <p class="fillInput__label">Imagen de perfil</p>
           <div class="fillInput__profile">
             <label class="action__upload-btn" for="img-selector">Añadir imagen</label>
-            <input type="file" name="photo" id="img-selector"
-              class="action__hiddenField js__profile-upload-btn" />
+            <input
+              type="file"
+              name="photo"
+              id="img-selector"
+              class="action__hiddenField js__profile-upload-btn"
+            />
 
             <div class="profile__preview js__profile-preview"></div>
           </div>
 
           <label class="fillInput__label" for="Email">Email</label>
-          <input class="fillInput__input js_inputEmail" type="mail" id="Email"
-            name="email" placeholder="Ej : skyguy@gmail.com" required />
+          <input
+            class="fillInput__input js_inputEmail"
+            type="mail"
+            id="Email"
+            name="email"
+            placeholder="Ej : skyguy@gmail.com"
+            required
+          />
 
           <label class="fillInput__label" for="tel">Teléfono</label>
-          <input class="fillInput__input js_inputPhone" type="tel" id="tel"
-            name="phone" placeholder="Ej : 555-55-55-55" required maxlength="9" />
+          <input
+            class="fillInput__input js_inputPhone"
+            type="tel"
+            id="tel"
+            name="phone"
+            placeholder="Ej : 555-55-55-55"
+            required
+            maxlength="9"
+          />
 
           <label class="fillInput__label" for="linkedin">Linkedin</label>
-          <input class="fillInput__input js_inputLinkedin" type="url" id="linkedin"
-            name="linkedin" placeholder="Ej : linkedin.com/sky.guy" required />
+          <input
+            class="fillInput__input js_inputLinkedin"
+            type="url"
+            id="linkedin"
+            name="linkedin"
+            placeholder="Ej : linkedin.com/sky.guy"
+            required
+          />
 
           <label class="fillInput__label" for="github">Github</label>
-          <input class="fillInput__input js_inputGithub" type="url" id="github"
-            name="github" placeholder="Ej : @sky.guy" required />
+          <input
+            class="fillInput__input js_inputGithub"
+            type="url"
+            id="github"
+            name="github"
+            placeholder="Ej : @sky.guy"
+            required
+          />
         </div>
       </fieldset>
+
       <fieldset class="share">
         <!-- Plantilla  -->
         <section class="headSection js_shareTitle">
@@ -169,6 +247,7 @@
         </section>
       </fieldset>
     </form>
+
   </main>
 
   <footer class="footer">
