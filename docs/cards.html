@@ -93,7 +93,7 @@
           <div class="desing__div--colors">
             <label class="familyColor1" for="familyColor1">
               <input
-                class="js_inputRadio"
+                class="js_inputRadio js_radioReset"
                 id="familyColor1 "
                 type="radio"
                 value="1"
@@ -226,27 +226,30 @@
           <i class="fa-solid fa-angle-down js_iconShare"></i>
         </section>
         <section class="js_divShare collapsed">
-          <button class="share__button js_shareButton ">
+          <button class="share__button js_shareButton">
             <i class="fa-regular fa-address-card share__button--icon"></i>Crear
             tarjeta
           </button>
 
-          <div class="card  js_cardShare collapsed">
-            <p class="card__text">La tarjeta ha sido creada:</p>
-            <p class="card__link">Link Jedi para compartir</p>
+          <div class="card js_cardShare collapsed">
+            <p class="card__text js_msj">La tarjeta ha sido creada:</p>
+            <a href="" class="card__link js_url">Link Jedi para compartir </a>
 
             <div class="card__twitter">
               <i class="fa-brands fa-twitter card__twitter--icon"></i>
 
-              <a class="card__twitter--link"
+              <a
+                class="card__twitter--link"
                 href="https://twitter.com/intent/tweet?text= adalab&url=http://localhost:3000/cards.html&hashtags=profilecard"
-                target="_blank">
+                target="_blank"
+              >
                 Compartir en twitter
               </a>
             </div>
           </div>
         </section>
       </fieldset>
+
     </form>
 
   </main>

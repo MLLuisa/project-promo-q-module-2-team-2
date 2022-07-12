@@ -23,6 +23,3 @@ const handleClick = (ev) => {
 designTitle.addEventListener("click", handleClick);
 fillTitle.addEventListener("click", handleClick);
 shareTitle.addEventListener("click", handleClick);
-buttonShare.addEventListener("click", () => {
-  cardShare.classList.remove("collapsed");
-});

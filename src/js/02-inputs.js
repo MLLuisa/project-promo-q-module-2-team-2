@@ -81,8 +81,8 @@ function writeImage() {
    * de nuestro componente.
    */
   profileImage.style.backgroundImage = `url(${fr.result})`;
-  profilePreview.style.backgroundImage = fr.result;
-  dataInput.photo = `url(${fr.result})`; //Guarda url en dataInput
+  profilePreview.style.backgroundImage = `url(${fr.result})`;
+  dataInput.photo = fr.result; //Guarda url en dataInput
 }
 
 /**
@@ -92,33 +92,3 @@ function writeImage() {
  */
 fileField.addEventListener("change", getImage);
 
-function clearObjectData() {
-  dataInput.palette = "";
-  dataInput.name = "";
-  dataInput.job = "";
-  dataInput.phone = "";
-  dataInput.email = "";
-  dataInput.linkedin = "";
-  dataInput.github = "";
-  dataInput.photo = "";
-}
-
-function clearInput() {
-  inputName.value = "";
-  inputJob.value = "";
-  inputEmail.value = "";
-  inputPhone.value = "";
-  inputLinkedin.value = "";
-  inputGithub.value = "";
-}
-
-const handleReset = (ev) => {
-  ev.preventDefault();
-  clearObjectData();
-  renderPreview(dataInput);
-  clearInput();
-  paintPalette(1);
-  console.log(dataInput);
-};
-
-btnReset.addEventListener("click", handleReset);
