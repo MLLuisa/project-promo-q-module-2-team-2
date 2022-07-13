@@ -18,8 +18,7 @@ function clearInput() {
   inputPhone.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
-  profileImage.style.backgroundImage =
-    'url(https://www.fundacion-affinity.org/sites/default/files/los-10-sonidos-principales-del-perro.jpg)';
+  profileImage.style.backgroundImage = 'url(./images/img-preview.jpg)';
   profilePreview.style.backgroundImage = '';
 }
 
