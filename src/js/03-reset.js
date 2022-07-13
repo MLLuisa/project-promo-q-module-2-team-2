@@ -18,7 +18,7 @@ function clearInput() {
   inputPhone.value = '';
   inputLinkedin.value = '';
   inputGithub.value = '';
-  profileImage.style.backgroundImage = "url('./images/img-preview.jpg')";
+  profileImage.style.backgroundImage = "url('../images/img-preview.jpg')";
   profilePreview.style.backgroundImage = '';
 }
 
