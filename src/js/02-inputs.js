@@ -1,43 +1,43 @@
-"use strict";
+'use strict';
 
 const dataInput = {
-  palette: "",
-  name: "",
-  job: "",
-  phone: "",
-  email: "",
-  linkedin: "",
-  github: "",
-  photo: "",
+  palette: 1,
+  name: '',
+  job: '',
+  phone: '',
+  email: '',
+  linkedin: '',
+  github: '',
+  photo: '',
 };
 
 function renderPreview() {
-  if (dataInput.name === "") {
+  if (dataInput.name === '') {
     previewName.innerHTML = `Nombre apellido`;
   } else {
     previewName.innerHTML = dataInput.name;
   }
-  if (dataInput.job === "") {
+  if (dataInput.job === '') {
     previewJob.innerHTML = `Front-end developer`;
   } else {
     previewJob.innerHTML = dataInput.job;
   }
-  if (dataInput.phone === "") {
+  if (dataInput.phone === '') {
     previewPhone.href = ``;
   } else {
     previewPhone.href = dataInput.phone;
   }
-  if (dataInput.email === "") {
+  if (dataInput.email === '') {
     previewEmail.href = ``;
   } else {
     previewEmail.href = `mailto: ${dataInput.email}`;
   }
-  if (dataInput.linkedin === "") {
+  if (dataInput.linkedin === '') {
     previewLinkedin.href = ``;
   } else {
     previewLinkedin.href = dataInput.linkedin;
   }
-  if (dataInput.github === "") {
+  if (dataInput.github === '') {
     previewGithub.href = ``;
   } else {
     previewGithub.href = dataInput.github;
@@ -52,7 +52,7 @@ const handleInput = (ev) => {
   console.dir(dataInput);
 };
 
-allInputs.addEventListener("keyup", handleInput);
+allInputs.addEventListener('keyup', handleInput);
 
 //Capturar imagen y visualizar
 const fr = new FileReader();
@@ -66,7 +66,7 @@ const fr = new FileReader();
  */
 function getImage(e) {
   const myFile = e.currentTarget.files[0];
-  fr.addEventListener("load", writeImage);
+  fr.addEventListener('load', writeImage);
   fr.readAsDataURL(myFile);
 }
 
@@ -90,5 +90,4 @@ function writeImage() {
  * - al botón visible para generar el click automático
  * - al campo oculto para cuando cambie su value
  */
-fileField.addEventListener("change", getImage);
-
+fileField.addEventListener('change', getImage);
