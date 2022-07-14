@@ -5,22 +5,11 @@ const designTitle = document.querySelector('.js_designTitle');
 const divDesign = document.querySelector('.js_divDesign');
 const iconDesign = document.querySelector('.js_iconDesign');
 
-// designTitle.addEventListener('click', () => {
-//   divDesign.classList.toggle('collapsed');
-//   iconDesign.classList.toggle('rotate');
-// });
-
 // Rellena
 
 const fillTitle = document.querySelector('.js_fillTitle');
 const divFill = document.querySelector('.js_divFill');
 const iconFill = document.querySelector('.js_iconFill');
-
-// fillTitle.addEventListener('click', () => {
-//   divFIll.classList.toggle('collapsed');
-//   iconFill.classList.toggle('rotate');
-//   divDesign.classList.add('collapsed');
-// });
 
 // Comparte
 
