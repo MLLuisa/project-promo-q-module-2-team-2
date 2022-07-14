@@ -6,7 +6,7 @@ const shareTwitter = document.querySelector('.js_shareTwitter');
 
 function createCard() {
   //expresiones regulares ---> validar email, validar contraseñas--> BONUS
-  
+
   fetch('https://awesome-profile-cards.herokuapp.com/card', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
@@ -15,7 +15,7 @@ function createCard() {
     .then((response) => response.json())
     .then((serverResp) => {
       console.log(serverResp);
-  
+      pMsg.innerHTML = 'La tarjeta ha sido creada';
       if (serverResp.success) {
         sectionUrl.innerHTML = serverResp.cardURL;
         sectionUrl.href = serverResp.cardURL;
@@ -26,12 +26,10 @@ function createCard() {
     });
 }
 
-function handleClickButtonShare (ev) {
-    ev.preventDefault();
-    createCard();
-    cardShare.classList.remove("collapsed");
+function handleClickButtonShare(ev) {
+  ev.preventDefault();
+  createCard();
+  cardShare.classList.remove('collapsed');
 }
 
-buttonShare.addEventListener("click", (handleClickButtonShare));
-
-
+buttonShare.addEventListener('click', handleClickButtonShare);
