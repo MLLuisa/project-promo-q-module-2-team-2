@@ -28,6 +28,9 @@ const handleReset = (ev) => {
   renderPreview(dataInput);
   clearInput();
   paintPalette(1);
+  inputRadio1.checked = true;
+  inputRadio2.checked = false;
+  inputRadio3.checked = false;
   console.log(dataInput);
 };
 
