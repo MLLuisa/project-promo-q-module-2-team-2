@@ -1,6 +1,6 @@
 'use strict';
 
-const dataInput = {
+let dataInput = {
   palette: 1,
   name: '',
   job: '',
@@ -13,7 +13,7 @@ const dataInput = {
 
 function renderPreview() {
   if (dataInput.name === '') {
-    previewName.innerHTML = `Nombre apellido`;
+    previewName.innerHTML = `Nombre Apellido`;
   } else {
     previewName.innerHTML = dataInput.name;
   }
@@ -43,13 +43,16 @@ function renderPreview() {
     previewGithub.href = dataInput.github;
   }
 }
+const saveLocalStorage = () => {
+  localStorage.setItem('localStorageCard', JSON.stringify(dataInput));
+};
 
 const handleInput = (ev) => {
   const nameInput = ev.target.name;
   const valueInput = ev.target.value;
   dataInput[nameInput] = valueInput;
   renderPreview();
-  console.dir(dataInput);
+  saveLocalStorage();
 };
 
 allInputs.addEventListener('keyup', handleInput);
@@ -83,6 +86,7 @@ function writeImage() {
   profileImage.style.backgroundImage = `url(${fr.result})`;
   profilePreview.style.backgroundImage = `url(${fr.result})`;
   dataInput.photo = fr.result; //Guarda url en dataInput
+  saveLocalStorage();
 }
 
 /**

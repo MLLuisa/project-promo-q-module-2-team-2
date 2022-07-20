@@ -45,7 +45,8 @@
     width: 240px;
     height: 200px;
     margin-top: 10px;
-    background: url(../images/img-preview.jpg) center no-repeat;
+    background:
+      url(../images/img-preview.jpg) center no-repeat;
     background-size: contain;
   }
 
@@ -73,7 +74,7 @@
   &__rectangle {
     width: 5px;
     height: 42px;
-   // background-color: $dirty-blue;
+    // background-color: $dirty-blue;
     position: absolute;
     top: 20px;
   }
@@ -99,50 +100,50 @@
 
 
 
-.palette-1{
-  .preview__name{
+.palette-1 {
+  .preview__name {
     color: $dark-green-blue;
   }
 
-  .preview__rectangle{
+  .preview__rectangle {
     background-color: $dirty-blue;
   }
 
-  .preview__icon{
+  .preview__icon {
     border-color: $hospital-green;
     color: $dark-green-blue;
   }
-  
+
 }
 
-.palette-2{
-  .preview__name{
-    color:$dried-blood;
+.palette-2 {
+  .preview__name {
+    color: $dried-blood;
   }
 
-  .preview__rectangle{
+  .preview__rectangle {
     background-color: $rusty-red;
   }
 
-  .preview__icon{
+  .preview__icon {
     border-color: $tomato;
     color: $dried-blood;
   }
-  
+
 }
 
-.palette-3{
-  .preview__name{
+.palette-3 {
+  .preview__name {
     color: $slate;
   }
 
-  .preview__rectangle{
+  .preview__rectangle {
     background-color: $faded-orange;
   }
 
-  .preview__icon{
+  .preview__icon {
     border-color: $light-grey-blue;
     color: $slate;
   }
-  
+
 }
