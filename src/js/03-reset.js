@@ -34,6 +34,7 @@ const handleReset = (ev) => {
   buttonShare.disabled = false;
   buttonShare.classList.remove('btnDisable');
   console.log(dataInput);
+  localStorage.clear();
 };
 
 btnReset.addEventListener('click', handleReset);
