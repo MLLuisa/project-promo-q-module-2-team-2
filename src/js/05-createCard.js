@@ -49,6 +49,8 @@ function handleClickButtonShare(ev) {
   ev.preventDefault();
   createCard();
   cardShare.classList.remove('collapsed');
+  buttonShare.disabled = true;
+  buttonShare.classList.add('btnDisable');
 }
 
 buttonShare.addEventListener('click', handleClickButtonShare);

@@ -22,9 +22,9 @@
     color: $white-three;
     text-transform: uppercase;
 
-    &:hover {
-      background-color: $white;
-    }
+    // &:hover {
+    //   background-color: $white;
+    // }
 
     &--icon {
       color: $white-three;
@@ -79,4 +79,8 @@
       padding: 10px;
     }
   }
+}
+.btnDisable {
+  background-color: rgb(135, 136, 135);
+  color: $white-three;
 }

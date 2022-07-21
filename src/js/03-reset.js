@@ -31,6 +31,8 @@ const handleReset = (ev) => {
   inputRadio1.checked = true;
   inputRadio2.checked = false;
   inputRadio3.checked = false;
+  buttonShare.disabled = false;
+  buttonShare.classList.remove('btnDisable');
   console.log(dataInput);
 };
 

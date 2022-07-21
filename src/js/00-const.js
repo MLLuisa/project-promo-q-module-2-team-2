@@ -42,3 +42,4 @@ const inputRadio1 = document.querySelector('.js_inputRadio1');
 const inputRadio2 = document.querySelector('.js_inputRadio2');
 const inputRadio3 = document.querySelector('.js_inputRadio3');
 inputRadio1.checked = true;
+buttonShare.disabled = false;
